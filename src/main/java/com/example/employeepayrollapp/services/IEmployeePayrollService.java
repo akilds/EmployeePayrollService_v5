@@ -8,6 +8,7 @@ import com.example.employeepayrollapp.model.EmployeePayrollData;
 public interface IEmployeePayrollService {
 	List<EmployeePayrollData> getEmployeePayrollData();
 	EmployeePayrollData getEmployeePayrollDataById(int empId);
+	List<EmployeePayrollData> getEmployeeByDepartment(String Department);
 	EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO emploPayrollDTO);
 	EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO);
 	void deleteEmployeePayrollData(int empId);
